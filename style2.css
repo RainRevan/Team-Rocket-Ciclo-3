@@ -148,7 +148,8 @@ input[type="url"] {
 
 
 input[type="file"] {
-    width: 60%;
+	position: absolute;
+    
     color:purple;
     font-weight: bold;
     border: 2px solid white;
