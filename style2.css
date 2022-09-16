@@ -66,9 +66,27 @@ body {
   /* Margen top, right, bottom, left*/
   margin: 0% 7% 2% 7%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   input {
   /* tamaño de los input*/	  
-    width: 100%;
+    width: 45%;
   }
   /* propiedades input text, borde, radio bordes, margenes y fondo trasparente*/	
   input[type="text"] {
