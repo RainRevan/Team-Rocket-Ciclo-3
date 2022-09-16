@@ -141,7 +141,6 @@ input[type="file"] {
     background: transparent;
   }
   input[type="file"]::-webkit-file-upload-button{
-  width: 10%; 
 	  
 	  
 	  
