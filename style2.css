@@ -132,6 +132,21 @@ input[type="url"] {
   input {
     width: 95%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input[type="file"] {
     color:purple;
     font-weight: bold;
@@ -139,10 +154,10 @@ input[type="file"] {
     border-radius: 15px;
     padding: 0px 0px;
     background: transparent;
-    width: 70%;
+    width: 60%;
   }
   input[type="file"]::-webkit-file-upload-button{
-	  width: 30%;
+	  width: 20%;
     -webkit-appearance: none;
     float: right;
     /* Margen top, right, bottom, left*/
@@ -154,6 +169,20 @@ input[type="file"] {
     background-color: white;
     cursor: pointer; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .file1
 input[type=file]::before {
     line-height: 35px;
