@@ -31,6 +31,23 @@
         display: none;
     }
 }
+body {
+  /* declarar en el body font family */
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(#b001ff, #00b0fd);
+  /* Hereda el valor del elemento principal */
+  background-position: inherit;
+  /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 50%;
+  /* Margen top, right, bottom, left*/
+  margin: 0% 10% 2% 20%;
+}
+input {
+  width: 90%;
+}
+
 /* Propiedades Titulo*/
 h1 {
   color: white;
@@ -52,22 +69,7 @@ header {
   /* Margen top, right, bottom, left*/
   margin: 2% 2% 3% -15%;
 }
-body {
-  /* declarar en el body font family */
-  font-family: Helvetica, sans-serif;
-  background: linear-gradient(#b001ff, #00b0fd);
-  /* Hereda el valor del elemento principal */
-  background-position: inherit;
-  /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
-  background-attachment: fixed;
-  overflow: hidden;
-  height: 50%;
-  /* Margen top, right, bottom, left*/
-  margin: 0% 10% 2% 20%;
-}
-input {
-  width: 90%;
-}
+
 input[type="text"] {
   border: 2px solid white;
   border-radius: 15px;
