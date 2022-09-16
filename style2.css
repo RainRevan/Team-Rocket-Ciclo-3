@@ -139,10 +139,10 @@ input[type="file"] {
     border-radius: 15px;
     padding: 0px 0px;
     background: transparent;
-    width: 30%;
+    width: 70%;
   }
   input[type="file"]::-webkit-file-upload-button{
-	  width: 70%;
+	  width: 30%;
     -webkit-appearance: none;
     float: right;
     /* Margen top, right, bottom, left*/
