@@ -149,7 +149,7 @@ input[type="url"] {
 
 input[type="file"] {
 	position: absolute;
-    
+        transform:translate(-50%,-50%)
     color:purple;
     font-weight: bold;
     border: 2px solid white;
