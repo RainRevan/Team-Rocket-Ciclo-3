@@ -118,7 +118,7 @@ body {
   background: transparent
 }
 input {
-  width: 75%;
+  width: 45%;
 }
   /* Estilo aplicado al id= link*/
 input[type="url"] {
