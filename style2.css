@@ -62,7 +62,7 @@ body {
     background-position: inherit;
   /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
     background-attachment: fixed;
-    height: 100%;
+    height: 75%;
   /* Margen top, right, bottom, left*/
   margin: 0% 7% 2% 7%;
   }
