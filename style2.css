@@ -118,7 +118,7 @@ body {
   background: transparent
 }
 input {
-  width: 95%;
+  width: 75%;
 }
   /* Estilo aplicado al id= link*/
 input[type="url"] {
@@ -132,21 +132,6 @@ input[type="url"] {
   input {
     width: 100%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 input[type="file"] {
         transform:translate(-50%,-50%)
     color:purple;
@@ -170,20 +155,6 @@ input[type="file"] {
     background-color: white;
     cursor: pointer; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .file1
 input[type=file]::before {
     line-height: 35px;
