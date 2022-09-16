@@ -115,7 +115,7 @@ body {
 {
   font-family: Helvetica, sans-serif;
   width:95%;
-  height: 40%;
+  height: 75%;
   resize: none;
   border: 2px solid white;
   border-radius: 15px;
@@ -128,7 +128,7 @@ body {
 {
   font-family: Helvetica, sans-serif;
   width:45%;
-  height:20%;
+  height:75%;
   resize: none;
   border: 2px solid white;
   border-radius: 15px;
@@ -209,7 +209,7 @@ body::-webkit-scrollbar-thumb {
       padding: 10px 3px;
       margin: 3px 0;
       border-color: #0066A2;
-      height: 40px;
+      height: 75px;
       width: 130px;
       font-family: Helvetica, sans-serif;
       cursor: pointer;
@@ -254,3 +254,4 @@ main button:hover:after{
 main button:hover:before{
 	left: 130%;
 }
+
