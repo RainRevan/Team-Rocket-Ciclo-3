@@ -3,6 +3,7 @@
     text-align: center;
 }
 /**Movil**/
+
 @media (max-width: 767px) {
     .desktop {
         display: none;
@@ -12,7 +13,6 @@
     }
 }
 /**Tablet**/
-
 @media (min-width: 768px) and (max-width: 990px) {
     .desktop {
         display: none;
@@ -22,7 +22,6 @@
     }
 }
 /**Escritorio**/
-
 @media (min-width: 991px) {
     .tablet {
         display: none;
@@ -38,6 +37,23 @@ header {
 input {
   width: 90%;
 }
+/* Propiedades Titulo*/
+h1 {
+  color: white;
+  font-size: 38px;
+  line-height: 100%;
+}
+/* Propiedades Subtitulo*/
+h2 {
+  color: white;
+  font-size: 16px;
+  line-height: 100%;
+}
+/* Propiedades Parrafo*/
+p {
+  color: white;
+  font-size: 12px;
+}
 body {
   /* declarar en el body font family */
   font-family: Helvetica, sans-serif;
@@ -46,27 +62,10 @@ body {
   background-position: inherit;
   /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
   background-attachment: fixed;
-
+  overflow: hidden;
   height: 50%;
   /* Margen top, right, bottom, left*/
-  margin: 0% 10% 2% 20%;
-}
-/* Propiedades Titulo*/
-h1 {
-  color: white;
-  font-size: 38px;
-  line-height: 20px;
-}
-/* Propiedades Subtitulo*/
-h2 {
-  color: white;
-  font-size: 16px;
-  line-height: 20px;
-}
-/* Propiedades Parrafo*/
-p {
-  color: white;
-  font-size: 12px;
+  margin: 0% 10% 0% 20%;
 }
 input[type="text"] {
   border: 2px solid white;
@@ -80,7 +79,6 @@ input[type="text"] {
   color: white;
   opacity: 1; /* Firefox */
 }
-
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: white;
