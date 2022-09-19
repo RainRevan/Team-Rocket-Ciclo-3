@@ -122,7 +122,8 @@
 }
 /* Estilo aplicado al id= myfile*/
  input[type="file"] {
-     width: 98%;
+     width: 97.5%;
+     color: white;
      transform:translate(-50%,-50%) color:purple;
      font-weight: bold;
      border: 2px solid white;
@@ -144,9 +145,9 @@
      cursor: pointer;
 }
  .file1 input[type=file]::before {
+     color: white;
      line-height: 35px;
      content: "Debes agregar una imagen que sea el identificador de tu proyecto";
-     color: white;
      padding: 10px 20px;
 }
  .file2 input[type=file]::before {
