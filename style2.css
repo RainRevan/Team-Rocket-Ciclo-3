@@ -29,194 +29,195 @@
          display: none;
     }
 }
- header {
-    /* Margen top, right, bottom, left*/
-     margin: 2% 0% 0% -3%;
-}
+header {
+  /* Margen top, right, bottom, left*/
+  margin: 2% 0% 0% -3%;
+  }
 /* Propiedades Titulo*/
- h1 {
-     color: white;
-     font-size: 28px;
-     line-height : 15px;
-}
+h1 {
+    color: white;
+    font-size: 28px;
+    line-height : 15px;
+  }
 /* Propiedades Subtitulo*/
- h2 {
-     color: white;
-     font-size: 15px;
-     line-height : 20px;
-}
+  h2 {
+    color: white;
+    font-size: 15px;
+    line-height : 20px;
+  }
 /* Propiedades Parrafo*/
- p {
-     color: white;
-     font-size: 12px;
-}
+p {
+    color: white;
+    font-size: 12px;
+  }
 /* Parte superior Logo Trueque.org*/
- body {
+body {
     /* declaración fuente para todo el documento */
-     font-family: Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     /* Fondo degrade con identificación Hex */
-     background: linear-gradient(#b001ff, #00b0fd);
+    background: linear-gradient(#b001ff, #00b0fd);
     /* Hereda el valor del elemento principal */
-     background-position: inherit;
-    /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
-     background-attachment: fixed;
-    /* Margen top, right, bottom, left*/
-     margin: 0% 7% 2% 7%;
-}
-/* propiedades input text, borde, radio bordes, margenes y fondo trasparente*/
- input[type="text"] {
-     width: 95%;
-     border: 2px solid white;
-     border-radius: 15px;
-     padding: 10px 20px;
-     margin: 3px 0;
-     background: transparent 
-}
-/* lectura del texto dentro del input en diversos navegadores y color de letra*/
- ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-     color: white;
-     opacity: 1;
-    /* Firefox */
-}
- :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-     color: white;
-}
- ::-ms-input-placeholder {
-    /* Microsoft Edge */
-     color: white;
-}
+    background-position: inherit;
+  /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
+    background-attachment: fixed;
+  /* Margen top, right, bottom, left*/
+  margin: 0% 7% 2% 7%;
+  }
+  /* propiedades input text, borde, radio bordes, margenes y fondo trasparente*/	
+  input[type="text"] {
+    width: 95%;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 3px 0;
+    background: transparent
+  }
+  /* lectura del texto dentro del input en diversos navegadores y color de letra*/
+  ::placeholder { 
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1; 
+   /* Firefox */
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: white;
+    }
 /* Estilo aplicado al textarea id= descripción*/
- .estilotextarea {
-     font-family: Helvetica, sans-serif;
-     width:95%;
-     height: 75%;
-     resize: none;
-     border: 2px solid white;
-     border-radius: 15px;
-     padding: 10px 20px;
-     margin: 3px 0;
-     background: transparent 
+  .estilotextarea {
+  font-family: Helvetica, sans-serif;
+  width:95%;
+  height: 75%;
+  resize: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 3px 0;
+  background: transparent
 }
-/* Estilo aplicado al textarea id= insumos*/
- .estilotextarea2 {
-     font-family: Helvetica, sans-serif;
-     width:95%;
-     height:75%;
-     resize: none;
-     border: 2px solid white;
-     border-radius: 15px;
-     padding: 10px 20px;
-     margin: 3px 0;
-     background: transparent 
+  /* Estilo aplicado al textarea id= insumos*/
+  .estilotextarea2 {
+  font-family: Helvetica, sans-serif;
+  width:95%;
+  height:75%;
+  resize: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 3px 0;
+  background: transparent
 }
-/* Estilo aplicado al id= link*/
- input[type="url"] {
-     width:95%;
-     border: 2px solid white;
-     border-radius: 15px;
-     padding: 10px 20px;
-     margin: 3px 0;
-     background: transparent;
-}
-/* Estilo aplicado al id= myfile*/
- input[type="file"] {
-     width: 97.5%;
-     color: white;
-     transform:translate(-50%,-50%) color:purple;
-     font-weight: bold;
-     border: 2px solid white;
-     border-radius: 15px;
-     padding: 0px 0px;
-     background: transparent;
-}
- input[type="file"]::-webkit-file-upload-button{
-     width: 20%;
-     -webkit-appearance: none;
-     float: right;
+  /* Estilo aplicado al id= link*/
+input[type="url"] {
+    width:95%;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 3px 0;
+    background: transparent;
+  }
+input[type="file"] {
+    width:97.5%;
+    color:purple;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0px 0px;
+    background: transparent;
+  }
+  input[type="file"]::-webkit-file-upload-button{
+    align="center"
+    width: 20%;  
+    -webkit-appearance: none;
+    float: right;
     /* Margen top, right, bottom, left*/
-     margin: 0% 0% 0% 0%;
-     border: 0px solid white;
-     border-radius: 15px;
-     padding: 1.2% 13%;
-     background: transparent;
-     background-color: white;
-     cursor: pointer;
+    margin: 0% 0% 0% 0%;
+    border: 0px solid white;
+    border-radius: 15px;
+    padding: 1.2% 13%;
+    background: transparent;
+    background-color: white;
+    cursor: pointer; 
 }
- .file1 input[type=file]::before {
-     color: white;
-     line-height: 35px;
-     content: "Debes agregar una imagen que sea el identificador de tu proyecto";
-     padding: 10px 20px;
+.file1
+input[type=file]::before {
+    line-height: 35px;
+    content: "Debes agregar una imagen que sea el identificador de tu proyecto";
+    color: white;
+    padding: 10px 20px;
 }
- .file2 input[type=file]::before {
-     line-height: 35px;
-     content: "Debes subir una fotografía del impacto de tu proyecto en la mayor resolución posible";
-     color: white;
-     padding: 10px 20px;
+.file2
+input[type=file]::before {
+    line-height: 35px;
+    content: "Debes subir una fotografía del impacto de tu proyecto en la mayor resolución posible";
+    color: white;
+    padding: 10px 20px;	
 }
- input[type=file]::file-selector-button:hover {
-     background-color: #B100FF;
-     border: 2px solid #00cec9;
+input[type=file]::file-selector-button:hover {
+  background-color: #B100FF;
+  border: 2px solid #00cec9;
 }
-/* Diseño Scrollbar*/
- body::-webkit-scrollbar {
-     width: 10px;
-     background: #021b79;
+  /* Diseño Scrollbar*/
+body::-webkit-scrollbar {
+	width: 10px;
+	background: #021b79;
 }
-/* Diseño Scrollbar*/
- body::-webkit-scrollbar-thumb {
-     background: rgba(255,255,255, .2);
-     border-radius: 10px;
-     border-right: 2px solid #021b79;
+  /* Diseño Scrollbar*/
+body::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255, .2);
+	border-radius: 10px;
+	border-right: 2px solid #021b79;
 }
 /* Estilo aplicado al botón guardar*/
- main button {
-     border-radius: 15px;
-     padding: 10px 3px;
-     margin: 3px 0;
-     border-color: #0066A2;
-     height: 75px;
-     width: 130px;
-     font-family: Helvetica, sans-serif;
-     cursor: pointer;
-     position: relative;
-     text-align: center;
-     font-weight: bold;
-     overflow: hidden;
-     transition: all ease 0.5s;
-     background:#B100FF;
-     color: white;
+    main button {
+      border-radius: 15px;
+      padding: 10px 3px;
+      margin: 3px 0;
+      border-color: #0066A2;
+      height: 40px;
+      width: 130px;
+      font-family: Helvetica, sans-serif;
+      cursor: pointer;
+      position: relative;
+	    text-align: center;
+	    font-weight: bold;
+	    overflow: hidden;
+	    transition: all ease 0.5s;
+	    background:#B100FF;
+      color: white;
 }
- main button:after, main button:before{
-     width: 80px;
-     height: 200px;
-     content: '';
-     display: block;
-     background: rgba(255,255,255,0.5);
-     transform: rotate(45deg);
-     top: -60px;
-     position: absolute;
-     transition: none;
-     right:-45%;
-     cursor: pointer;
+main button:after,
+main button:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
 }
- main button:before{
-     left: -48%;
+main button:before{
+	left: -48%;
 }
- main button:hover{
-     text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-     background:#922b3e 
+main button:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#922b3e
 }
- main button:hover:after, main button:hover:before{
-     transform: rotate(45deg), scaleX(130%);
-     background: rgba(255,255,255,0.1);
-     transition: all ease 0.5s;
+main button:hover:after,
+main button:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
 }
- main button:hover:after{
-     right: 130%;
+main button:hover:after{
+	right: 130%;
 }
- main button:hover:before{
-     left: 130%;
+main button:hover:before{
+	left: 130%;
 }
