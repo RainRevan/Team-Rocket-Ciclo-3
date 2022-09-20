@@ -39,10 +39,10 @@ input {
 }
 /* Propiedades Titulo*/
 h1 {
+  text-align: center;
   color: white;
   font-size: 38px;
   line-height: 100%;
-  text-align: bottom;
 
 }
 /* Propiedades Subtitulo*/
