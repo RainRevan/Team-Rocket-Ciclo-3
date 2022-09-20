@@ -39,7 +39,7 @@ input {
 }
 /* Propiedades Titulo*/
 h1 {
-  text-align: bottom;
+  vertical-align: bottom;
   color: white;
   font-size: 38px;
   line-height: 100%;
