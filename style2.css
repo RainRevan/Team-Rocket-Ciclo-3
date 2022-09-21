@@ -108,9 +108,10 @@ body {
   padding: 10px 20px;
   margin: 3px 0;
   background: transparent
+/*	  
 }
-  /* Estilo aplicado al id= link*/
-input[type="url"] {
+  /* Estilo aplicado al id= link
+    input[type="url"] {
     width:95%;
     border: 2px solid white;
     border-radius: 15px;
@@ -132,7 +133,7 @@ input[type="file"] {
     width: 20%;  
     -webkit-appearance: none;
     float: right;
-    /* Margen top, right, bottom, left*/
+    /* Margen top, right, bottom, left
     margin: 0% 0% 0% 0%;
     border: 0px solid white;
     border-radius: 15px;
@@ -159,6 +160,7 @@ input[type=file]::file-selector-button:hover {
   background-color: #B100FF;
   border: 2px solid #00cec9;
 }
+*/
   /* Diseño Scrollbar*/
 body::-webkit-scrollbar {
 	width: 10px;
