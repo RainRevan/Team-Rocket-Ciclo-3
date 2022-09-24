@@ -1,34 +1,34 @@
 .resolucion {
-    width: 99%;
-    text-align: center;
+  width: 99%;
+  text-align: center;
 }
 /**Movil**/
 
 @media (max-width: 767px) {
-    .desktop {
-        display: none;
-    }
-    .tablet {
-        display: none;
-    }
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
 }
 /**Tablet**/
 @media (min-width: 768px) and (max-width: 990px) {
-    .desktop {
-        display: none;
-    }
-    .movil {
-        display: none;
-    }
+  .desktop {
+    display: none;
+  }
+  .movil {
+    display: none;
+  }
 }
 /**Escritorio**/
 @media (min-width: 991px) {
-    .tablet {
-        display: none;
-    }
-    .movil {
-        display: none;
-    }
+  .tablet {
+    display: none;
+  }
+  .movil {
+    display: none;
+  }
 }
 header {
   /* Margen top, right, bottom, left*/
@@ -42,7 +42,6 @@ h1 {
   color: white;
   font-size: 38px;
   line-height: 100%;
-
 }
 /* Propiedades Subtitulo*/
 h2 {
@@ -75,9 +74,15 @@ input[type="checkbox"] {
   right: auto;
   height: 12px;
   width: 12px;
-  
 }
 input[type="text"] {
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 3px 0;
+  padding: 10px 20px;
+  background: transparent;
+}
+input[type="mail"] {
   border: 2px solid white;
   border-radius: 15px;
   margin: 3px 0;
