@@ -22,34 +22,30 @@ function validacionForm() {
   });
 
   if (proyecto.value.length < 1 || proyecto.value.trim() == "") {
-    mostrarMensajeError("proyecto", "Nombre no valido*");
+    //mostrarMensajeError("proyecto", "Nombre no valido*");//
+    alert("Nombre no valido*");
     condicion = false;
   }
   if (nombre.value.length < 1 || nombre.value.trim() == "") {
-    mostrarMensajeError("surname", "Nombre no valido");
+    alert("Nombre no valido*");
     condicion = false;
   }
   if (email.value.length < 1 || email.value.trim() == "") {
-    mostrarMensajeError("email", "Correo no valido*");
+    alert("Correo no valido*");
     condicion = false;
   }
   if (organizacion.value.length < 1 || organizacion.value.trim() == "") {
-    mostrarMensajeError("organizacion", "organizacion no valida*");
+    alert("Organización no valida*");
     condicion = false;
   }
   if (!terminosycondiciones.checked) {
-    mostrarMensajeError("terminosycondiciones", "Acepte*");
+    alert("Debe aceptar los términos y condiciones*");
     condicion = false;
   } else {
-    mostrarMensajeError("terminosycondiciones", "");
+    alert("Datos guardados con exito a continuación diligencie la información de su proyecto");
   }
   return condicion;
 }
-function mostrarMensajeError(claseInput, mensaje) {
-  let elemento = document.querySelector(`.${claseInput}`);
-  elemento.lastElementChild.innerHTML = mensaje;
-}
 function enviarFormulario() {
-  form.reset();
-  form.lastElementChild.innerHTML = "Listo !!";
+  window.location.replace("Proyecto.html");
 }
