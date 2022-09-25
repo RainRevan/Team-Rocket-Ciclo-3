@@ -1,8 +1,10 @@
+// Formulario Proyecto//
 const proyecto = document.getElementById("proyecto");
 const nombre = document.getElementById("nombre");
 const email = document.getElementById("email");
 const organizacion = document.getElementById("organizacion");
 const terminosycondiciones = document.getElementById("terminosycondiciones");
+// llamado de formulario e inputs//
 const form = document.getElementById("form");
 const listInputs = document.querySelectorAll(".form-input");
 
@@ -41,7 +43,8 @@ function validacionForm() {
   if (!terminosycondiciones.checked) {
     alert("Debe aceptar los términos y condiciones*");
     condicion = false;
-  } else {
+  }
+  else {
     alert("Datos guardados con exito a continuación diligencie la información de su proyecto");
   }
   return condicion;
