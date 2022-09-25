@@ -31,32 +31,46 @@
       </figure>
     </header>
     <main>
-      <form>
+      <div class="container">
+        <form action="" class="form" id="form-proyecto">
         <!-- Títulos y subtítulos -->
         <h1>Los datos de tu proyecto </h1>
+        <div class="form-input indicador">
         <h2>¿Cuál es el indicador de impacto mas importante del proyecto?, máximo 3 palabras</h2>
         <!-- tipo , texto interno y obligatoriedad. autocomplete es sugerencia del navegador sobre información registrada en otros formularios -->
         <input type="text" id="indicador" placeholder="Ejemplo: Niños atendidos, abuelos alimentados, Niñas graduadas" required />
+        </div>
+        <div class="form-input descripcion">
         <h2>Describe tu proyecto en no más de 500 palabras</h2>
         <textarea class=estilotextarea rows="10" cols="50" id="descripcion" maxlength="500" placeholder="Aquí la descripción de tu proyecto" required /></textarea>
+        </div>
+        <div class="form-input insumos">
         <h2>Escribe los insumos que requiere tu proyecto, separados por comas</h2>
         <textarea class=estilotextarea2 rows="5" cols="50" id="insumos" maxlength="500" placeholder="Ejemplo: Sillas, Mesas, Personal de cocina, Maquinaria pesada, Empleados, Recuerda poner una lista lo más detallada y larga posible." required /></textarea>
+        </div>
+        <div class="form-input link">
         <h2>Video Multimedia</h2>
         <input type="url" id="link" placeholder="Debes agregar un enlace de Youtube que muestre un video que explique que hace tu organización o tu proyecto" required />
+        </div>
+        <div class="form-input carta">
         <h2>Carta de bienvenida</h2>
         <textarea class=estilotextarea rows="10" cols="50" id="carta" placeholder="Debes escribir una carta que invite a los usuarios de trueque a conocer tu proyecto." required /></textarea>
+        </div>
+        <div class="form-input myfile">
         <h2>Imagen de logo o logosímbolo</h2>
         <input type="url" id="myfile" placeholder="Debes agregar una imagen que sea el identificador de tu proyecto" required />
-        <!-- 
-        <file class="file1">
-          <input type="file" id="myfile" name="myfile" accept=".jpg,.gif,.png" required /> -->
+        </div>
+        <!-- <file class="file1">
+        <input type="file" id="myfile" name="myfile" accept=".jpg,.gif,.png" required /> -->
+        <div class="form-input foto">
         <h2>Registro fotográfico</h2>
         <input type="url" id="foto" placeholder="Debes subir una fotografía del impacto de tu proyecto en la mayor resolución posible" required />
+        </div><br><br>
         <!-- 
         <file class="file2">
           <input type="file" id="Foto" name="foto" accept=".jpg,.gif,.png" required /> -->
-      <br><br>
-      </form>
+        </form>
+      </div>
           <!-- botón tipo submit de registro -->
         <button type="submit" style="float: left;">Guardar</button><br>
     </main>
