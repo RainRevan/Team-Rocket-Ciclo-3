@@ -52,3 +52,15 @@ function validacionForm() {
 function enviarFormulario() {
   window.location.replace("Proyecto.html");
 }
+
+//insertar registros//
+/*$("#BtnRegistrarme").click(function(){
+  var proyecto = document.getElementById("proyecto").value;
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var organizacion = document.getElementById("organizacion").value;
+  db.transaction(function(transaction){
+      var sql = "INSERT INTO organizacion(nom_proyecto,nombre,email,nom_organizacion) VALUES(?,?,?,?)";
+      transaction.executeSql(sql,[proyecto,nombre,email,organizacion])
+  });
+});*/

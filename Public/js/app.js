@@ -1,55 +1,40 @@
-$(document).ready(function() {
-        $('#btnRegistrarme').click(function() {
-            $("#form").submit(function(event) {
-                event.preventDefault();
-                registrarUsuario();
-            });
+const btn = document.querySelector('#btn');
+const formulario = document.querySelector('#form');
+const respuesta = document.querySelector('#respuesta');
+
+const getData = () => {
+    const datos = new FormData(formulario);
+    const datosProcesados = Object.fromEntries(datos.entries());
+    formulario.reset();
+    return datosProcesados;
+}
+const postData = async () => {
+    const newUser = getData();
+    try {
+        const responde = await fetch('jdbc:postgresql://localhost:5432/RegistroUsuarios',){
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newUser)
         });
+    
+        if (respond.ok) {
+        const response = await response.json();
+        const {proyecto, nombre,email,organizacion} = jsonResponse;
+        respuesta.innerHTML = 
+        <ul>
+        !Exito¡ Se guardó la siguiente información:
+        <li>${proyecto}</li>
+        <li>${nombre}</li>
+        <li>${email}</li>
+        <li>${organizacion}</li>
+        </ul>
     }
 
-    function registrarUsuario() {
-
-        let proyecto = $("#proyecto").val();
-        let nombre = $("#nombre").val();
-        let email = $("#email").val();
-        let organizacion = $("#organizacion").val();
-        let indicador = $("#indicador").val();
-        let insumos = $("#insumos").val();
-        let link = $("#link").val();
-        let carta = $("#carta").val();
-        let myfile = $("#myfile").val();
-        let Foto = $("#Foto").val();
-        $.ajax({
-            type: "GET",
-            dataType: "html",
-            url: "./Proyecto",
-            data: $.param({
-                proyecto: proyecto,
-                nombre: nombre,
-                email: email,
-                organizacion: organizacion,
-                indicador: indicador,
-                insumos: insumos,
-                link: link,
-                carta: carta,
-                myfile: myfile,
-                Foto: Foto
-            }),
-            success: function(result) {
-                let parsedResult = JSON.parse(result);
-
-                if (parsedResult != false) {
-                    $("#register-error").addClass("d-none");
-                    let username = parsedResult['username'];
-                    document.location.href = "home.html?username=" + username;
-                } else {
-                    $("#register-error").removeClass("d-none");
-                    $("#register-error").html("Error en el registro del usuario");
-                }
-            }
-        });
-    } else {
-        $("#register-error").removeClass("d-none");
-        $("#register-error").html("Las contraseñas no coinciden");
+    } catch(error){
+        console.log(error);
     }
 }
+btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    postData();
+})
