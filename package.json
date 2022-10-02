@@ -1,0 +1,23 @@
+{
+  "name": "team-rocket-ciclo-3",
+  "version": "1.0.0",
+  "description": "Github para el ciclo 3 Propuesta de proyecto",
+  "main": "databasepg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RainRevan/Team-Rocket-Ciclo-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RainRevan/Team-Rocket-Ciclo-3/issues"
+  },
+  "homepage": "https://github.com/RainRevan/Team-Rocket-Ciclo-3#readme",
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}
