@@ -1,3 +1,3 @@
-<?php include("Index.html"); ?>
-<?php include("Proyecto.html"); ?>
-<?php include("Politicadeprivacidad.html"); ?>
+<?php include_once("Index.html"); ?>
+<?php include_once("Proyecto.html"); ?>
+<?php include_once("Politicadeprivacidad.html"); ?>
