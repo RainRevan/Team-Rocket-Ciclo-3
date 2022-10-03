@@ -1,0 +1,129 @@
+.resolucion {
+     width: 99%;
+     text-align: center;
+}
+/**Movil**/
+ @media (max-width: 767px) {
+     .desktop {
+         display: none;
+    }
+     .tablet {
+         display: none;
+    }
+}
+/**Tablet**/
+ @media (min-width: 768px) and (max-width: 990px) {
+     .desktop {
+         display: none;
+    }
+     .movil {
+         display: none;
+    }
+}
+/**Escritorio**/
+ @media (min-width: 991px) {
+     .tablet {
+         display: none;
+    }
+     .movil {
+         display: none;
+    }
+}
+header {
+  /* Margen top, right, bottom, left*/
+  margin: 2% 0% 0% -3%;
+  }
+/* Propiedades Titulo*/
+h1 {
+    color: white;
+    font-size: 28px;
+    line-height : 15px;
+  }
+/* Propiedades Subtitulo*/
+  h2 {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    line-height : 20px;
+  }
+/* Propiedades Parrafo*/
+p {
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+  }
+/* Parte superior Logo Trueque.org*/
+body {
+    /* declaración fuente para todo el documento */
+    font-family: Helvetica, sans-serif;
+    /* Fondo degrade con identificación Hex */
+    background: linear-gradient(#b001ff, #00b0fd);
+    /* Hereda el valor del elemento principal */
+    background-position: inherit;
+  /* Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor. */
+    background-attachment: fixed;
+  /* Margen top, right, bottom, left*/
+  margin: 0% 7% 2% 7%;
+  }
+  /* Diseño Scrollbar*/
+body::-webkit-scrollbar {
+	width: 10px;
+	background: #021b79;
+}
+  /* Diseño Scrollbar*/
+body::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255, .2);
+	border-radius: 10px;
+	border-right: 2px solid #021b79;
+}
+/* Estilo aplicado al botón volver*/
+    main button {
+      border-radius: 15px;
+      padding: 10px 3px;
+      margin: 3px 0;
+      border-color: #0066A2;
+      height: 40px;
+      width: 130px;
+      font-family: Helvetica, sans-serif;
+      cursor: pointer;
+      position: relative;
+	    text-align: center;
+	    font-weight: bold;
+	    overflow: hidden;
+	    transition: all ease 0.5s;
+	    background:#B100FF;
+      color: white;
+}
+main button:after,
+main button:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+main button:before{
+	left: -48%;
+}
+main button:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#922b3e
+}
+main button:hover:after,
+main button:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+main button:hover:after{
+	right: 130%;
+}
+main button:hover:before{
+	left: 130%;
+}
