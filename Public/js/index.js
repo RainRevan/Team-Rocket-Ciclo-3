@@ -8,8 +8,8 @@ const terminosycondiciones = document.getElementById("terminosycondiciones");
 const form = document.getElementById("form");
 const listInputs = document.querySelectorAll(".form-input");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
   let condicion = validacionForm();
   if (condicion) {
     enviarFormulario();
@@ -50,17 +50,5 @@ function validacionForm() {
   return condicion;
 }
 function enviarFormulario() {
-  window.location.replace("Proyecto.html");
+  window.location.replace("proyecto.html");
 }
-
-//insertar registros//
-/*$("#BtnRegistrarme").click(function(){
-  var proyecto = document.getElementById("proyecto").value;
-  var nombre = document.getElementById("nombre").value;
-  var email = document.getElementById("email").value;
-  var organizacion = document.getElementById("organizacion").value;
-  db.transaction(function(transaction){
-      var sql = "INSERT INTO organizacion(nom_proyecto,nombre,email,nom_organizacion) VALUES(?,?,?,?)";
-      transaction.executeSql(sql,[proyecto,nombre,email,organizacion])
-  });
-});*/
