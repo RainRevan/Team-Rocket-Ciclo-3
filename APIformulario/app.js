@@ -11,11 +11,12 @@ const client = new Client(connectionData);
 client.connect();
 // Querys
 //Obtener información
-client.query('SELECT * FROM usuario')
-        .then(response =>{
+client.query('SELECT * FROM public."Usuario"')
+        .then(response => {
             console.log(response.rows)
             client.end()
         })
         .catch(err => {
+            console.log(err);
             client.end()
         });
