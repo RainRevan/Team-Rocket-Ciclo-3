@@ -5,6 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 // Uso del paquete Pg
 const { Client } = require('pg');
+const { request } = require("express");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -29,7 +30,9 @@ app.get("/Usuario", (req, res) => {
     //Obtener información
     client.query('SELECT * FROM public."Usuario"')
         .then((response) => {
-            console.log(response.rows);
+            //console.log(response.rows);
+            //Regresar los datos//
+            request.json(response.rows);
             client.end();
         })
         .catch((err) => {
