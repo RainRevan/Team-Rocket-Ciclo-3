@@ -52,3 +52,17 @@ function validacionForm() {
 function enviarFormulario() {
   window.location.replace("proyecto.html");
 }
+
+function llenarTabla() {
+  fetch("http://localhost:3000/Usuario")
+  .then((response)=>response.json())
+  .then((Usuario)=>{
+    let tablaUsuarios = document.querySelector("#tabla-usuarios tbody");
+    for (const itemUsuario of Usuario){
+      let tr = "<tr> <td>" + itemUsuario.id_organizacion + "</td> <td>" + itemUsuario.nom_proyecto + "</td></tr>";
+
+      tablaUsuarios.innerHTML += tr;
+    }
+  })
+}
+llenarTabla();
