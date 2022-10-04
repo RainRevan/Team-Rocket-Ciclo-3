@@ -1,5 +1,5 @@
 const {Client} = require('pg')
-const client = new Client({
+const client = new Client ({
     host: 'localhost',
     user: 'postgres',
     port: 5432,
@@ -7,11 +7,11 @@ const client = new Client({
     database: 'RegistroUsuarios',
 })
 client.connect();
-client.query('select * from Organizacion', (err,res)=>{
+client.query ('select * from Organizacion', (err,res) => {
     if (!err) {  
         console.log(res.rows);
-        } else{
-            console.log(err.message);
+        } else {
+            console.log (err.message);
         }
         client.end;
 })
