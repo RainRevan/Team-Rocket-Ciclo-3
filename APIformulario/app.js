@@ -7,6 +7,7 @@ const connectionData = {
     connectionString : connectionString,
     ssl:{ rejectUnauthorized: false}
 };
+
 const client = new Client(connectionData);
 client.connect();
 // Querys
